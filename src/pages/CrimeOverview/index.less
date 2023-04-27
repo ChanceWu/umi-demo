@@ -1,0 +1,38 @@
+.container {
+  height: calc(100vh - 86px);
+  margin: 13px 20px;
+  :global .top_tabs {
+    height: 100%;
+    .ant-tabs-nav {
+      margin-bottom: 0;
+      background-color: #fff;
+      .ant-tabs-tab {
+        padding: 10px 16px;
+      }
+    }
+    .ant-tabs-content-holder .ant-tabs-content {
+      height: 100%;
+    }
+  }
+}
+
+:global .level_extreme {
+  color: #6c010e;
+  background-color: #6c010e1a;
+  border: 1px solid #6c010e;
+}
+:global .level_high {
+  color: #e02020;
+  background-color: #e020201a;
+  border: 1px solid #e02020;
+}
+:global .level_middle {
+  color: #c97800;
+  background-color: #c978001a;
+  border: 1px solid #c97800;
+}
+:global .level_low {
+  color: #258f8d;
+  background-color: #258f8d1c;
+  border: 1px solid #258f8d;
+}

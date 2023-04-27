@@ -1,0 +1,133 @@
+@import '~antd/dist/antd.less';
+@import '~@/assets/css/theme.less';
+@import '~@/assets/css/scroll.less';
+@import '~@/assets/css/antd.less';
+
+html,
+body,
+#root {
+  min-height: 100%;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.svgIcon {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
+/* iframe 统一设置样式 */
+.myIframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 185px);
+  border: none;
+}
+
+.tasklink {
+  color: #000;
+}
+
+/* zxqy-tspt */
+.page-container {
+  width: 100%;
+  height: calc(100vh - 130px);
+  overflow: auto;
+}
+
+.contentIframe {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.hideHeaderIframe {
+  .contentIframe();
+
+  top: -50px;
+  height: calc(100% + 50px) !important;
+}
+
+.loading {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.blurLoading {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #278bff;
+  border-radius: 50%;
+  transform: scale(0.6);
+}

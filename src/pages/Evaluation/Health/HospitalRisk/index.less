@@ -1,0 +1,54 @@
+.wrap {
+  margin-right: 20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(22, 133, 253, 0.2);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+
+.recomCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  >span {
+    line-height: 45px;
+    white-space: nowrap;
+  }
+
+  >span:nth-child(1) {
+    color: rgb(35, 206, 253);
+  }
+}
+
+// 推荐工种
+.recomWrokType {
+  .recomCol();
+}
+
+// 推荐指数
+.recomIndex {
+  .recomCol();
+  margin-left: 20px;
+
+  >span:nth-child(1) {
+    font-size: 20px;
+  }
+}
+
+.stateDesc {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgb(239, 55, 98);
+  white-space: nowrap;
+  margin-right: 40px;
+}

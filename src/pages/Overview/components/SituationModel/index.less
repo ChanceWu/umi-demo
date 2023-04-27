@@ -1,0 +1,44 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.row {
+  flex: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.progressWrap {
+  display: flex;
+  align-items: center;
+}
+
+.progressLabel {
+  margin-left: 10px;
+}
+
+.descWrap {
+  display: flex;
+
+  >* {
+    margin-left: 10px;
+  }
+}
+
+.progressComWrap {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
+
+.numText {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}

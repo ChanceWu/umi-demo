@@ -1,0 +1,80 @@
+.wrap {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 370px;
+  font-size: 14px;
+  margin-bottom: 45px;
+  margin-left: 50px;
+}
+
+.container {
+  position: relative;
+}
+
+.humanWrap {
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+  height: 100%;
+  z-index: 2;
+}
+
+.humanHead {
+  position: absolute;
+  width: 495px;
+  height: 189px;
+  bottom: 77px;
+  left: 65px;
+}
+
+.humanBase {
+  position: absolute;
+  bottom: 0;
+  left: 186px;
+  z-index: -1;
+  width: 270px;
+}
+
+.humanInfo {
+
+  >span {
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  >span:nth-child(1) {
+    right: -230px;
+    top: 105px;
+  }
+
+  >span:nth-child(2) {
+    right: -210px;
+    top: 192px;
+  }
+
+  >span:nth-child(3) {
+    left: 410px;
+    top: 149px;
+  }
+}
+
+.bottomBorder {
+  position: absolute;
+  bottom: -20px;
+
+  >img {
+    width: 570px;
+  }
+
+  >span {
+    position: absolute;
+    bottom: -30px;
+    left: 42%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1B4192;
+  }
+}

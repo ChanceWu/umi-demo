@@ -1,0 +1,53 @@
+.overview {
+  display: flex;
+  padding: 20px;
+  font-size: 14px;
+  background: url('../../assets/images/overview/map/bgMap.png');
+  background-repeat: no-repeat;
+  background-position: 150px -320px;
+  background-size: 85%;
+}
+
+.overviewCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.overviewColNormal {
+  width: 500px;
+  margin: 0 10px;
+  .overviewCol();
+
+  &:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.overviewColCenter {
+  width: 860px;
+  .overviewCol();
+}
+
+.overviewItem {
+  position: relative;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, rgba(22, 133, 253, 0.2) 0%, rgba(44, 145, 255, 0.05) 100%);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 4px;
+    background: #1370d1;
+    content: '';
+  }
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

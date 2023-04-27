@@ -1,0 +1,74 @@
+.wrap {
+  min-height: calc(100vh - 90px);
+  // background-color: #0e1f3c;
+  // box-shadow: 0 0 10px 0 #0066e3 inset;
+
+  :global {
+    .ant-menu {
+      background-color: transparent;
+    }
+
+    .ant-menu-submenu-title,
+    .ant-menu-submenu-arrow {
+      color: #333333;
+    }
+
+    .ant-menu-submenu {
+      .ant-menu-item {
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .ant-menu-item {
+      color: #333333;
+
+      &:hover {
+        color: #333333;
+      }
+    }
+
+    .ant-menu-item-selected.ant-menu-item-only-child {
+      color: #fff;
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: none;
+    }
+
+    .ant-menu-inline .ant-menu-selected::after,
+    .ant-menu-inline .ant-menu-item-selected::after {
+      display: none;
+    }
+
+    .ant-menu .ant-menu-item {
+      background-image: url(../../../../assets/images/evaluation/menu_unSelect.png);
+      background-size: 100% 99%;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-image: url(../../../../assets/images/evaluation/menu_select.png);
+      background-size: cover;
+
+      &:hover {
+
+        .ant-menu-item-icon,
+        .ant-menu-title-content {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  margin-left: 20px;
+  border-left: 1px solid #b5bceb;
+  height: 100%;
+  padding-top: 20px;
+}

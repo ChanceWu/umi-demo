@@ -1,0 +1,67 @@
+.row {
+  display: flex;
+  color: #000;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 20px 0;
+}
+
+.content {
+  margin: auto 0;
+  margin-left: 20px;
+}
+
+.imgWrap {
+  margin: auto 0;
+  padding: 10px 9px;
+  background-image: url(../../../../assets/images/evaluation/photoBg.png);
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.rightContent {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.rowText .label {
+  display: inline-block;
+  min-width: auto;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+  padding: 7px 34px;
+  line-height: initial;
+  border-radius: 5px;
+  background-image: url(../../../../assets/images/evaluation/crimeLabelBg.png);
+  background-size: cover;
+}
+
+.rowText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 45px;
+  // border-bottom: 1px dashed rgba(0, 174, 255, 0.3);
+
+  >.name {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  >span {
+    min-width: 30%;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #666666;
+
+    >span {
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.row {
+  display: flex;
+  height: 110px;
+  margin: 10px 0;
+  .block {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    flex: 1;
+    &:nth-child(1) {
+      margin-right: 10px;
+    }
+    .blockLoading {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      // background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .blockItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .colHr {
+      width: 1px;
+      height: 62px;
+      margin: 0 5px;
+      background-color: #00aeff;
+    }
+    .img_zaice {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/zaice.png');
+    }
+    .img_zaiya {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/zaiya.png');
+    }
+    .img_jianwai {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/jianwai.png');
+    }
+    .img_zhuyuan {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/zhuyuan.png');
+    }
+    .img_zaitao {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/zaitao.png');
+    }
+    .img_tanqin {
+      width: 80px;
+      text-align: center;
+      background-size: cover;
+      background-image: url('../../../../assets/images/prisonarea/statistical/tanqin.png');
+    }
+    .circle {
+      padding: 20px 0;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      .num {
+        padding-bottom: 30px;
+      }
+      .age {
+        position: absolute;
+        bottom: 12px
+      }
+    }
+    .circle_blue {
+      background-image: url('../../../../assets/images/prisonarea/circle_blue.png');
+    }
+    .circle_green {
+      background-image: url('../../../../assets/images/prisonarea/circle_green.png');
+    }
+    .circle_yellow {
+      background-image: url('../../../../assets/images/prisonarea/circle_yellow.png');
+    }
+  }
+}

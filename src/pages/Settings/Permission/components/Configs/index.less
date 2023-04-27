@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  color: white;
+}
+
+.left {
+  align-self: flex-start;
+  width: 150px;
+  margin-right: 12px;
+  padding-top: 5px;
+  color: white;
+  text-align: right;
+}
+
+.content {
+  flex: 1;
+
+  >div {
+    color: #23CEFD;
+  }
+
+  >*:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

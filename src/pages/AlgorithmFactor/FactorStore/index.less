@@ -1,0 +1,95 @@
+.wrap {
+  min-height: calc(100vh - 100px);
+  padding: 0 20px;
+  background: #ffffff;
+  margin: 20px;
+
+  :global {
+    .ant-table-cell {
+      white-space: pre-line;
+    }
+  }
+  .selectWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    :global {
+      .ant-row.ant-form-item:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+  }
+  .factor_table {
+    :global .ant-table-container {
+      .ant-table-body {
+        height: calc(100vh - 291px);
+      }
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      :global .anticon:hover {
+        color: #40a9ff;
+      }
+    }
+  }
+}
+
+// .selectItem {
+//   width: 100px;
+//   margin-right: 20px;
+// }
+
+// .cascaderItem {
+//   width: 200px;
+//   margin-right: 20px;
+// }
+
+.inputItem {
+  width: 250px;
+}
+
+// .card {
+//   position: relative;
+//   font-size: 14px;
+//   width: 100%;
+//   height: 100%;
+//   padding: 0 10px;
+//   background-color: #0c1e38;
+//   border: 1px solid rgba(41, 142, 253, 0.5);
+//   .cardHeader {
+//     height: 45px;
+//     display: flex;
+//     align-items: center;
+//     border-bottom: 1px solid #185599;
+//   }
+//   .cardContent {
+//     height: calc(100% - 45px);
+//     display: flex;
+//     margin: 10px 0;
+//     .contentLeft {
+//       width: auto;
+//     }
+//     .contentRight {
+//       flex: 1;
+//       margin-left: 10px;
+//       .textRow {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//       }
+//     }
+//   }
+// }
+
+// .trapeHeader {
+//   margin: 20px 0;
+// }
+
+// .actionWrap {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   width: 80vw;
+// }

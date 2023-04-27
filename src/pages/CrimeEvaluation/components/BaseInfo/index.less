@@ -1,0 +1,68 @@
+.baseInfoWrap {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 13px 20px;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.content {
+  flex: 1;
+  margin-left: 38px;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  > span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 14px;
+  }
+}
+
+.blackLabel {
+  color: #fff;
+  font-size: 12px;
+  padding: 7px 22px;
+  background-image: url(../../../../assets/images/evaluation/crimeLabelBg.png);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.infoFlex {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  .infoItem {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-size: 14px;
+    >span:nth-child(1) {
+      display: block;
+      width: 66px;
+      text-align: right;
+      color: #666666;
+      white-space: nowrap;
+    }
+    >span:nth-child(2) {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+  .infoItem:last-of-type {
+    >span:nth-child(1) {
+      position: relative;
+      right: 56px;
+    }
+  }
+}
+
+.blueBlock {
+  line-height: 22px;
+  padding: 0 25px;
+  background-color: #5570C6;
+  color: #ffffff;
+}

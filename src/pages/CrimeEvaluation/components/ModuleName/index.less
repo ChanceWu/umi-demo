@@ -1,0 +1,22 @@
+.moduleName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  > span {
+    position: relative;
+    padding-left: 9px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 4px;
+      height: 14px;
+      background: #333333;
+    }
+  }
+  > a {
+    text-decoration: underline;
+  }
+}

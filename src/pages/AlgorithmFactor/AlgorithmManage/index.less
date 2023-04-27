@@ -1,0 +1,36 @@
+.wrap {
+  min-height: calc(100vh - 100px);
+  margin: 20px;
+  background: #ffffff;
+
+  :global .ant-tabs {
+    height: 100%;
+    .ant-tabs-nav {
+      margin-bottom: 0;
+      padding: 0 20px;
+      background-color: #fff;
+      .ant-tabs-tab {
+        font-size: 16px;
+        padding: 10px 16px;
+        & + .ant-tabs-tab {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .selectWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    :global {
+      .ant-row.ant-form-item:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+    .inputItem {
+      width: 250px;
+    }
+  }
+}
+

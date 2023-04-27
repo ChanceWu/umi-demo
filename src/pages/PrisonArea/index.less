@@ -1,0 +1,38 @@
+.wrap {
+  height: 100%;
+  .container {
+    height: calc(100% - 172px);
+    background-color: #fff;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #d6d7d8;
+    }
+    .content {
+      position: relative;
+      height: calc(100% - 53px);
+      padding: 0 10px 10px;
+      .blockLoading {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+      }
+      .roomScrollWrap {
+        height: 100%;
+        overflow-y: auto;
+        margin-left: 90px;
+        padding-left: 20px;
+        border-left: 1px solid #d6d7d8;
+        .roomList {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.popInfo {
+  width: 520px;
+}
+
+.title {
+  color: white;
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  margin: 20px 0;
+}
+
+.col {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  &:nth-child(2) {
+    border-left: 1px solid #17467F;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: column;
+
+    >span:nth-child(1) {
+      color: white;
+      font-size: 30px;
+    }
+
+    >span:nth-child(2) {
+      color: #2788F2;
+      font-size: 14px;
+    }
+  }
+}
+
+.block {
+  height: 150px;
+}

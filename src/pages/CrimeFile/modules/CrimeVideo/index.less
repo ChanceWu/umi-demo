@@ -1,0 +1,52 @@
+.wrap {
+  position: relative;
+  border: 1px solid #E8E8E8;
+  overflow: hidden;
+  .video {
+    width: 75%;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    .header {
+      height: 45px;
+      line-height: 45px;
+      margin: 0 10px;
+      width: calc(100% - 20px);
+      text-align: center;
+      color: #333333;
+      border-bottom: 1px solid #E8E8E8;
+    }
+    .videoList {
+      height: calc(100% - 45px);
+      padding: 0 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      .listItem {
+        height: 35px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-image: url(../../../../assets/images/crimeFile/video_default.png);
+        margin-bottom: 10px;
+        line-height: 35px;
+        color: #666666;
+        text-align: center;
+        cursor: pointer;
+      }
+      .listItemActive {
+        .listItem();
+
+        color: #1A4091;
+        background-image: url(../../../../assets/images/crimeFile/video_selected.png);
+      }
+    }
+  }
+}

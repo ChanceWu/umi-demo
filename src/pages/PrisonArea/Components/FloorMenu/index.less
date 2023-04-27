@@ -1,0 +1,85 @@
+.wrap {
+  position: sticky;
+  top: 80px;
+  float: left;
+  margin-top: 30px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 1px;
+    height: 100%;
+    background-color: #D7D7D7;
+  }
+
+  :global {
+    .ant-menu {
+      margin-left: 20px;
+      margin-top: 20px;
+      border-right: none;
+
+      .ant-menu-item-selected {
+        background-color: transparent;
+      }
+    }
+
+    .ant-menu::before {
+      position: absolute;
+      left: 25px;
+      top: -11px;
+      display: block;
+      content: '';
+      width: 11px;
+      height: 11px;
+      border: 2px solid #D7D7D7;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .ant-menu::after {
+      position: absolute;
+      left: 25px;
+      bottom: -11px;
+      display: block;
+      content: '';
+      width: 11px;
+      height: 11px;
+      border: 2px solid #D7D7D7;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .ant-menu-item {
+      padding-left: 30px !important;
+    }
+
+    .ant-menu-item::before {
+      position: absolute;
+      left: 6px;
+      top: 15px;
+      display: block;
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #D8D8D8;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .ant-menu-item-selected::before {
+      position: absolute;
+      left: 4px;
+      top: 15px;
+      display: block;
+      content: '';
+      width: 23px;
+      height: 12px;
+      background-image: url(../../../../assets/images/crimeFile/current.png);
+      z-index: 10;
+      border-radius: 0;
+      background-color: transparent;
+    }
+  }
+}

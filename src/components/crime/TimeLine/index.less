@@ -1,0 +1,70 @@
+.timeLineWrap {
+  background-color: #fff;
+  margin: 13px 20px;
+  padding: 0 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  >* {
+    margin-right: 10px;
+  }
+}
+
+.dayWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.day {
+  position: relative;
+  color: #1B4192;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.daySelected {
+  background-color: #1C4292;
+  color: #ffffff;
+
+  &::before {
+    display: none;
+  }
+}
+
+.dayHas {
+  &:hover {
+    .daySelected();
+  }
+  &::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #DF3939;
+    border-radius: 50%;
+  }
+}
+
+.dayNoHas {
+  color: rgba(0,0,0,0.35);
+  cursor: not-allowed;
+  background-color: transparent;
+}

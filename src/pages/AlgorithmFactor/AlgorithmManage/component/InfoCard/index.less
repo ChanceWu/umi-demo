@@ -1,0 +1,52 @@
+:global .ant-card-body {
+  position: relative;
+  padding-bottom: 10px;
+  background-color: #1b419205;
+}
+.card_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  :global .ant-avatar {
+    font-size: 20px;
+    background-color: #4873cb;
+  }
+  .title {
+    max-width: calc(100% - 90px);
+    padding-left: 6px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .version {
+    position: absolute;
+    right: -1px;
+    padding: 0 6px;
+    color: #1b4192;
+    font-size: 12px;
+    background-color: #1b41920d;
+    border: 1px solid #1b41924d;
+    border-radius: 10px 0 0 10px;
+  }
+}
+.card_content {
+  .desc {
+    display: -webkit-box;
+    height: 44px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: #666666;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .sub_desc {
+    display: flex;
+    justify-content: space-between;
+    color: #9c9c9e;
+    :global .anticon {
+      padding-right: 3px;
+    }
+  }
+}

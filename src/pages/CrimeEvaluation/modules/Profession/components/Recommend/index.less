@@ -1,0 +1,44 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rec {
+  height: 100px;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 20px;
+  font-size: 14px;
+
+  >span:nth-of-type(1) {
+    color: #ffffff;
+  }
+
+  &:nth-of-type(1) {
+    background-size: 100% 100%;
+    background-image: url(../../../../../../assets/images/evaluation/recgreen.png);
+  }
+
+  &:nth-of-type(2) {
+    background-size: 100% 100%;
+    background-image: url(../../../../../../assets/images/evaluation/recblue.png);
+  }
+}
+
+.btn {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../../../../../assets/images/evaluation/recmore.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  >a {
+    color: #ffffff;
+  }
+}

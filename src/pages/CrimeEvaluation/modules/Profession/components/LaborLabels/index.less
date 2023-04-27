@@ -1,0 +1,38 @@
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  width: 384px;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+  .header {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0 10px;
+  }
+  .content {
+    font-size: 14px;
+    flex: 1;
+    padding: 7px 15px;
+  }
+  &:nth-of-type(1) {
+    background-image: url(../../../../../../assets/images/evaluation/labelBg1.png);
+  }
+  &:nth-of-type(2) {
+    background-image: url(../../../../../../assets/images/evaluation/labelBg2.png);
+  }
+  &:nth-of-type(3) {
+    background-image: url(../../../../../../assets/images/evaluation/labelBg3.png);
+  }
+  &:nth-of-type(4) {
+    background-image: url(../../../../../../assets/images/evaluation/labelBg4.png);
+  }
+}

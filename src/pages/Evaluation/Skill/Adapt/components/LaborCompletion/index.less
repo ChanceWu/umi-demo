@@ -1,0 +1,48 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  >span:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 14px;
+      width: 14px;
+      background: #52A6EA;
+      margin-right: 7px;
+    }
+  }
+}
+
+.charts {
+  flex: 1;
+}
+
+.select {
+  color: #333;
+
+  :global {
+    .ant-select-selector {
+      border-radius: 0 !important;
+      border: 1px solid #C2C8D4 !important;
+
+      .ant-select-selection-item {
+        color: #333;
+      }
+
+      .ant-select-arrow {
+        color: #BFBFBF !important;
+      }
+    }
+  }
+}

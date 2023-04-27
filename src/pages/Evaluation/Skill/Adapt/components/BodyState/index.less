@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+}
+
+.humanWrap {
+  position: relative;
+  display: inline-block;
+  pointer-events: none;
+  height: 100%;
+  margin-left: 25%;
+  z-index: 2;
+}
+
+.svgDrew {
+  position: absolute;
+  width: 200%;
+  left: -50%;
+}
+
+.humanBody {
+  position: relative;
+  margin-top: 50px;
+  height: 290px;
+  margin-bottom: 30px;
+}
+
+.humanBase {
+  position: absolute;
+  bottom: 0;
+  left: 186px;
+  z-index: -1;
+}
+
+.humanInfo {
+
+  >span {
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+  }
+}
+
+.extraInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  bottom: 10px;
+  border: 1px solid var(--border-primary-dark-color);
+  padding: 20px;
+
+  >span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >span:nth-child(1) {
+      display: flex;
+      align-items: center;
+      color: #666666;
+    }
+
+    >span:nth-child(1)::before {
+      margin-right: 6px;
+      content: '';
+      display: block;
+      height: 14px;
+      width: 14px;
+      background-color: #F8B044;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.wrap {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+.content {
+  flex: 1;
+  margin-left: 160px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.partRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header {
+  >p {
+    margin-bottom: 12px;
+  }
+
+  >p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  >p:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(24, 85, 153, 0.5);
+}

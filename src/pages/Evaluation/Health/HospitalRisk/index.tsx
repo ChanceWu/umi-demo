@@ -1,0 +1,83 @@
+import StateCircleItem from '@/components/common/StateCircleItem';
+import useMount from '@/hooks/useMount';
+import { EvaluationApi } from '@/services';
+import { formatParams } from '@/utils/utils';
+import React, { useCallback } from 'react';
+import { useLocation, useModel } from 'umi';
+import BaseInfo from '../../components/BaseInfo';
+import TitleBar from '../../components/TitleBar';
+import InfluenceRank from './components/InfluenceRank';
+import styles from './index.less';
+
+const HospitalRisk: React.FunctionComponent = () => {
+  const { setBaseInfo } = useModel('evaluation.common');
+  const { recrime, setRecrime } = useModel('evaluation.crimeAgain');
+  const location = useLocation();
+
+  // 获取基础信息
+  const getAssessInfo = useCallback(() => {
+    EvaluationApi.queryAssessInfo(
+      formatParams({
+        // eslint-disable-next-line @typescript-eslint/dot-notation
+        id: location['query'].id,
+      }),
+    ).then((data) => {
+      if (data.resultList && data.resultList.length) {
+        setBaseInfo(data.resultList[0]);
+      }
+    });
+  }, [location, setBaseInfo]);
+
+  const getRecrime = useCallback(() => {
+    EvaluationApi.queryRecrime(
+      formatParams({
+        // eslint-disable-next-line @typescript-eslint/dot-notation
+        id: location['query'].id,
+      }),
+    ).then((data) => {
+      if (data.resultList instanceof Array) {
+        setRecrime(data.resultList[0]);
+      }
+    });
+  }, [location, setRecrime]);
+
+  useMount(() => {
+    getAssessInfo();
+    getRecrime();
+  });
+
+  return (
+    <div className={styles.wrap}>
+      <TitleBar date={recrime.evaluate_date} title="再犯罪评估报告" />
+      {/* 详情信息 */}
+      <BaseInfo
+        rightContent={() => (
+          <>
+            <StateCircleItem
+              style={{
+                marginTop: 'auto',
+                marginBottom: 'auto',
+                marginRight: 50,
+                cursor: 'default',
+              }}
+              text={recrime.re_crime === 1 ? '有风险' : '无风险'}
+              desc="评估结果"
+              color={recrime.re_crime === 1 ? 'rgb(239, 55, 98)' : 'rgb(35, 206, 253)'}
+              isActive
+              size={70}
+            />
+            <div
+              className={styles.stateDesc}
+              style={{ color: recrime.re_crime === 1 ? 'rgb(239, 55, 98)' : 'rgb(35, 206, 253)' }}
+            >
+              有风险疾病数量：{recrime.probab}
+            </div>
+          </>
+        )}
+      />
+      <InfluenceRank />
+    </div>
+  );
+};
+
+export default HospitalRisk;
